@@ -11,6 +11,14 @@ void main() {
           backgroundColor: Colors.purple,
         ),
         body: const DicePage(),
+        /*floatingActionButton: const FloatingActionButton(
+          onPressed: null,
+          child: Icon(
+            Icons.add,
+            color: Colors.purple,
+          ),
+          backgroundColor: Colors.white,
+        ),*/
       ),
     ),
   );
@@ -26,6 +34,11 @@ class DicePage extends StatefulWidget {
 class _DicePageState extends State<DicePage> {
   int leftDiceNumber = 2;
   int rightDiceNumber = 1;
+  void changeDice() {
+    leftDiceNumber = Random().nextInt(6) + 1;
+    rightDiceNumber = Random().nextInt(6) + 1;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -35,7 +48,7 @@ class _DicePageState extends State<DicePage> {
             child: MaterialButton(
                 onPressed: () {
                   setState(() {
-                    leftDiceNumber = Random().nextInt(6) + 1;
+                    changeDice();
                   });
                 },
                 child: Image.asset('images/dice$leftDiceNumber.png')),
@@ -44,7 +57,7 @@ class _DicePageState extends State<DicePage> {
             child: MaterialButton(
                 onPressed: () {
                   setState(() {
-                    rightDiceNumber = Random().nextInt(6) + 1;
+                    changeDice();
                   });
                 },
                 child: Image.asset("images/dice$rightDiceNumber.png")),
