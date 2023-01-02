@@ -11,14 +11,6 @@ void main() {
           backgroundColor: Colors.purple,
         ),
         body: const DicePage(),
-        /*floatingActionButton: const FloatingActionButton(
-          onPressed: null,
-          child: Icon(
-            Icons.add,
-            color: Colors.purple,
-          ),
-          backgroundColor: Colors.white,
-        ),*/
       ),
     ),
   );
