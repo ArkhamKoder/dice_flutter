@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="mordecai.code.dice_flutter">
    <application
-        android:label="dice_flutter"
+        android:label="Dicely"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
