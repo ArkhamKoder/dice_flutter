@@ -8,7 +8,7 @@ void main() {
         backgroundColor: Colors.purple,
         appBar: AppBar(
           title: const Text('Dice'),
-          backgroundColor: Colors.purple,
+          backgroundColor: Colors.purple.shade900,
         ),
         body: const DicePage(),
       ),
